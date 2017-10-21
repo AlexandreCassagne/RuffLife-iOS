@@ -21,7 +21,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		let a = UIImagePNGRepresentation(image)!
 		let base64 = a.base64EncodedString()
 		
-		print(base64)
+//		print(base64)
 		
 		picker.dismiss(animated: true, completion: nil)
 	}
