@@ -202,6 +202,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-TN-ebr">
                                         <rect key="frame" x="0.0" y="190" width="304" height="30"/>
                                         <state key="normal" title="Autofill"/>
+                                        <connections>
+                                            <action selector="autofill:" destination="5t5-zY-Nky" eventType="touchUpInside" id="Ykp-Ev-nye"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

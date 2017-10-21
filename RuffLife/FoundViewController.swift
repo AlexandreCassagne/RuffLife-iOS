@@ -8,21 +8,39 @@
 
 import UIKit
 
-class FoundViewController: UIViewController {
+class FoundViewController: UIViewController, UIImagePickerControllerDelegate {
 
+	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+		picker.dismiss(animated: true, completion: nil)
+	}
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		print (info)
+		picker.dismiss(animated: true, completion: nil)
+	}
+	
 	@IBOutlet weak var location: UITextField!
 	@IBOutlet weak var breed: UITextField!
 	@IBOutlet weak var color: UITextField!
-	
+	@IBOutlet weak var firstName: UITextField!
+	@IBOutlet weak var number: UITextField!
+	@IBOutlet weak var pictureView: UIImageView!
 	override func viewDidLoad() {
         super.viewDidLoad()
-		
-		
 		
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+	@IBAction func autofill(_ sender: Any) {
+		let picker = UIImagePickerController();
+		picker.sourceType = .camera
+		
+//		self.show(picker, sender: self)
+		present(picker, animated: true, completion: nil)
+	}
+	
+	@IBOutlet weak var autofill: UIButton!
+	override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
