@@ -105,7 +105,7 @@
         <!--Found-->
         <scene sceneID="Jaf-Ud-yoZ">
             <objects>
-                <viewController title="Found" id="kAO-kk-fL0" sceneMemberID="viewController">
+                <viewController title="Found" id="kAO-kk-fL0" customClass="FoundViewController" customModule="RuffLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Po0-LU-VQO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
         <!--Lost-->
         <scene sceneID="uhh-Of-nFy">
             <objects>
-                <viewController title="Lost" id="MZj-zA-C2x" sceneMemberID="viewController">
+                <viewController title="Lost" id="MZj-zA-C2x" customClass="LostViewController" customModule="RuffLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B5g-cq-4tZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
