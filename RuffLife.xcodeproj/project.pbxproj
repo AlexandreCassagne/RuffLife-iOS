@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */; };
 		AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */; };
 		AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */; };
 		AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RuffLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.debug.xcconfig"; sourceTree = "<group>"; };
 		AC0D62161F9BD9E600A15DD1 /* RuffLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuffLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
 		AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
 		AC0D624B1F9BE7BC00A15DD1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.release.xcconfig"; sourceTree = "<group>"; };
 		D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EF626F2C1FEB9871699B1BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A372CABC6E56F516E8FECE3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */,
+				BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC0D620D1F9BD9E500A15DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +112,8 @@
 				AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */,
 				AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */,
 				AC0D62171F9BD9E600A15DD1 /* Products */,
+				A372CABC6E56F516E8FECE3E /* Pods */,
+				4EF626F2C1FEB9871699B1BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */;
 			buildPhases = (
+				B1378324E242EF7295993ADA /* [CP] Check Pods Manifest.lock */,
 				AC0D62121F9BD9E500A15DD1 /* Sources */,
 				AC0D62131F9BD9E500A15DD1 /* Frameworks */,
 				AC0D62141F9BD9E500A15DD1 /* Resources */,
+				11EFAF4884AC7A0E6821772D /* [CP] Embed Pods Frameworks */,
+				2655FA3445B04643948A6B76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +293,74 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11EFAF4884AC7A0E6821772D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2655FA3445B04643948A6B76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1378324E242EF7295993ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RuffLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC0D62121F9BD9E500A15DD1 /* Sources */ = {
@@ -440,6 +535,7 @@
 		};
 		AC0D623F1F9BD9E600A15DD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +551,7 @@
 		};
 		AC0D62401F9BD9E600A15DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
