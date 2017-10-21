@@ -53,13 +53,9 @@ class MapViewController: UIViewController {
             break
         }
     }
-    class PetAnnotation: MKAnnotationView{
-        var imageName: String!
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default ()
         
         annotation.coordinate = CLLocationCoordinate2D(latitude: 11.12, longitude: 12.11)
         annotation.title = "Hello World"
