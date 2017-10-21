@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */; };
+		AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */; };
+		AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */; };
+		AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */; };
+		AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */; };
+		AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */; };
+		AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0D622B1F9BD9E600A15DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0D620E1F9BD9E500A15DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D62151F9BD9E500A15DD1;
+			remoteInfo = RuffLife;
+		};
+		AC0D62361F9BD9E600A15DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0D620E1F9BD9E500A15DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D62151F9BD9E500A15DD1;
+			remoteInfo = RuffLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC0D62161F9BD9E600A15DD1 /* RuffLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuffLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC0D621E1F9BD9E600A15DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0D62231F9BD9E600A15DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0D62251F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeTests.swift; sourceTree = "<group>"; };
+		AC0D62301F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeUITests.swift; sourceTree = "<group>"; };
+		AC0D623B1F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0D62131F9BD9E500A15DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62271F9BD9E600A15DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62321F9BD9E600A15DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0D620D1F9BD9E500A15DD1 = {
+			isa = PBXGroup;
+			children = (
+				AC0D62181F9BD9E600A15DD1 /* RuffLife */,
+				AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */,
+				AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */,
+				AC0D62171F9BD9E600A15DD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0D62171F9BD9E600A15DD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D62161F9BD9E600A15DD1 /* RuffLife.app */,
+				AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */,
+				AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0D62181F9BD9E600A15DD1 /* RuffLife */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */,
+				AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */,
+				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
+				AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */,
+				AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
+				AC0D62251F9BD9E600A15DD1 /* Info.plist */,
+			);
+			path = RuffLife;
+			sourceTree = "<group>";
+		};
+		AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */,
+				AC0D62301F9BD9E600A15DD1 /* Info.plist */,
+			);
+			path = RuffLifeTests;
+			sourceTree = "<group>";
+		};
+		AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */,
+				AC0D623B1F9BD9E600A15DD1 /* Info.plist */,
+			);
+			path = RuffLifeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0D62151F9BD9E500A15DD1 /* RuffLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */;
+			buildPhases = (
+				AC0D62121F9BD9E500A15DD1 /* Sources */,
+				AC0D62131F9BD9E500A15DD1 /* Frameworks */,
+				AC0D62141F9BD9E500A15DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RuffLife;
+			productName = RuffLife;
+			productReference = AC0D62161F9BD9E600A15DD1 /* RuffLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0D62291F9BD9E600A15DD1 /* RuffLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D62411F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeTests" */;
+			buildPhases = (
+				AC0D62261F9BD9E600A15DD1 /* Sources */,
+				AC0D62271F9BD9E600A15DD1 /* Frameworks */,
+				AC0D62281F9BD9E600A15DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D622C1F9BD9E600A15DD1 /* PBXTargetDependency */,
+			);
+			name = RuffLifeTests;
+			productName = RuffLifeTests;
+			productReference = AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC0D62341F9BD9E600A15DD1 /* RuffLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D62441F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeUITests" */;
+			buildPhases = (
+				AC0D62311F9BD9E600A15DD1 /* Sources */,
+				AC0D62321F9BD9E600A15DD1 /* Frameworks */,
+				AC0D62331F9BD9E600A15DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D62371F9BD9E600A15DD1 /* PBXTargetDependency */,
+			);
+			name = RuffLifeUITests;
+			productName = RuffLifeUITests;
+			productReference = AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0D620E1F9BD9E500A15DD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Cassagne;
+				TargetAttributes = {
+					AC0D62151F9BD9E500A15DD1 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					AC0D62291F9BD9E600A15DD1 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC0D62151F9BD9E500A15DD1;
+					};
+					AC0D62341F9BD9E600A15DD1 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC0D62151F9BD9E500A15DD1;
+					};
+				};
+			};
+			buildConfigurationList = AC0D62111F9BD9E500A15DD1 /* Build configuration list for PBXProject "RuffLife" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0D620D1F9BD9E500A15DD1;
+			productRefGroup = AC0D62171F9BD9E600A15DD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0D62151F9BD9E500A15DD1 /* RuffLife */,
+				AC0D62291F9BD9E600A15DD1 /* RuffLifeTests */,
+				AC0D62341F9BD9E600A15DD1 /* RuffLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0D62141F9BD9E500A15DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */,
+				AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */,
+				AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62281F9BD9E600A15DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62331F9BD9E600A15DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0D62121F9BD9E500A15DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */,
+				AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62261F9BD9E600A15DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62311F9BD9E600A15DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0D622C1F9BD9E600A15DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0D62151F9BD9E500A15DD1 /* RuffLife */;
+			targetProxy = AC0D622B1F9BD9E600A15DD1 /* PBXContainerItemProxy */;
+		};
+		AC0D62371F9BD9E600A15DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0D62151F9BD9E500A15DD1 /* RuffLife */;
+			targetProxy = AC0D62361F9BD9E600A15DD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0D621E1F9BD9E600A15DD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0D62231F9BD9E600A15DD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC0D623C1F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC0D623D1F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0D623F1F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC0D62401F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC0D62421F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuffLife.app/RuffLife";
+			};
+			name = Debug;
+		};
+		AC0D62431F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuffLife.app/RuffLife";
+			};
+			name = Release;
+		};
+		AC0D62451F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RuffLife;
+			};
+			name = Debug;
+		};
+		AC0D62461F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RuffLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0D62111F9BD9E500A15DD1 /* Build configuration list for PBXProject "RuffLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D623C1F9BD9E600A15DD1 /* Debug */,
+				AC0D623D1F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D623F1F9BD9E600A15DD1 /* Debug */,
+				AC0D62401F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D62411F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D62421F9BD9E600A15DD1 /* Debug */,
+				AC0D62431F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D62441F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D62451F9BD9E600A15DD1 /* Debug */,
+				AC0D62461F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0D620E1F9BD9E500A15DD1 /* Project object */;
+}
