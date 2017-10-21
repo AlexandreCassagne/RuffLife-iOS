@@ -239,7 +239,10 @@
                     <connections>
                         <outlet property="breed" destination="YhB-Ee-hFJ" id="JPd-lP-G0Q"/>
                         <outlet property="color" destination="OTc-WW-JLG" id="kHe-x0-JPf"/>
+                        <outlet property="firstName" destination="6mS-oi-ZVt" id="oNo-qd-po1"/>
                         <outlet property="location" destination="4Z8-5p-LT9" id="dao-Ch-ySA"/>
+                        <outlet property="number" destination="mH5-KH-Ij8" id="uE0-Fc-0qa"/>
+                        <outlet property="pictureView" destination="zLd-sb-UGe" id="kFq-rT-iL7"/>
                         <outlet property="view" destination="Po0-LU-VQO" id="6pe-SH-iv0"/>
                     </connections>
                 </viewController>

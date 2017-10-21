@@ -8,14 +8,21 @@
 
 import UIKit
 
-class FoundViewController: UIViewController, UIImagePickerControllerDelegate {
+class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
 		picker.dismiss(animated: true, completion: nil)
 	}
 	
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-		print (info)
+		guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+		pictureView.image = image
+
+		let a = UIImagePNGRepresentation(image)!
+		let base64 = a.base64EncodedString()
+		
+		print(base64)
+		
 		picker.dismiss(animated: true, completion: nil)
 	}
 	
@@ -34,7 +41,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate {
 	@IBAction func autofill(_ sender: Any) {
 		let picker = UIImagePickerController();
 		picker.sourceType = .camera
-		
+		picker.delegate = self
 //		self.show(picker, sender: self)
 		present(picker, animated: true, completion: nil)
 	}
