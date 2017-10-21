@@ -10,9 +10,15 @@ import UIKit
 
 class FoundViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var location: UITextField!
+	@IBOutlet weak var breed: UITextField!
+	@IBOutlet weak var color: UITextField!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-
+		
+		
+		
         // Do any additional setup after loading the view.
     }
 
