@@ -37,7 +37,9 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		
         // Do any additional setup after loading the view.
     }
-
+	@IBAction func submit(_ sender: Any) {
+		
+	}
 	@IBAction func autofill(_ sender: Any) {
 		let picker = UIImagePickerController();
 		picker.sourceType = .camera
