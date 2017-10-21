@@ -30,6 +30,7 @@
 #########################
 
 Pods
+Pods/*
 RuffLife.xcodeproj/*
 RuffLife.xcodeproj/project.pbxproj
 RuffLife.xcworkspace
