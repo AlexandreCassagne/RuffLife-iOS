@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -213,15 +214,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-sb-UGe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-sb-UGe">
                                 <rect key="frame" x="16" y="248" width="288" height="241"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sTQ-vk-op2" firstAttribute="centerX" secondItem="QKF-x9-Nzn" secondAttribute="centerX" id="1eT-hr-Io7"/>
+                            <constraint firstItem="sTQ-vk-op2" firstAttribute="top" secondItem="zLd-sb-UGe" secondAttribute="bottom" constant="8" symbolic="YES" id="IBU-bz-c9h"/>
                             <constraint firstItem="zLd-sb-UGe" firstAttribute="top" secondItem="QKF-x9-Nzn" secondAttribute="bottom" constant="8" symbolic="YES" id="JFP-u4-4GX"/>
                             <constraint firstItem="Odr-A9-mUV" firstAttribute="trailing" secondItem="QKF-x9-Nzn" secondAttribute="trailing" constant="8" id="KL5-pk-qcK"/>
+                            <constraint firstItem="zLd-sb-UGe" firstAttribute="leading" secondItem="Po0-LU-VQO" secondAttribute="leadingMargin" id="PCm-5c-TD1"/>
                             <constraint firstItem="sTQ-vk-op2" firstAttribute="leading" secondItem="Odr-A9-mUV" secondAttribute="leading" constant="12" id="UD4-ki-94h"/>
                             <constraint firstItem="QKF-x9-Nzn" firstAttribute="top" secondItem="Odr-A9-mUV" secondAttribute="top" id="UJ4-qk-uNm"/>
                             <constraint firstItem="QKF-x9-Nzn" firstAttribute="centerX" secondItem="zLd-sb-UGe" secondAttribute="centerX" id="vlH-bU-oEX"/>
