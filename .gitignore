@@ -29,6 +29,11 @@
 #
 #########################
 
+Pods
+Rufflife.xcodeproj/project.pbxproj
+Rufflife.xcodeproj/RuffLife.xcworkspace
+xcsharedata
+
 #####
 # OS X temporary files that should never be committed
 #
