@@ -15,10 +15,13 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	}
 	
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-		let img = info[UIImagePickerControllerEditedImage] as! UIImage
-		let a = UIImagePNGRepresentation(img)!
+		guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+		pictureView.image = image
+
+		let a = UIImagePNGRepresentation(image)!
 		let base64 = a.base64EncodedString()
 		
+		print(base64)
 		
 		picker.dismiss(animated: true, completion: nil)
 	}
