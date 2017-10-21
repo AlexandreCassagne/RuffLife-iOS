@@ -14,6 +14,7 @@
 		AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */; };
 		AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */; };
 		AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */; };
+		AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeUITests.swift; sourceTree = "<group>"; };
 		AC0D623B1F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */,
 				AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */,
 				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
+				AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */,
 				AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */,
 				AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
 				AC0D62251F9BD9E600A15DD1 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */,
 				AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */,
+				AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
