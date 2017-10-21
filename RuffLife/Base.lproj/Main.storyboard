@@ -247,7 +247,7 @@
         <!--Lost-->
         <scene sceneID="uhh-Of-nFy">
             <objects>
-                <viewController title="Lost" id="MZj-zA-C2x" customClass="LostViewController" customModule="RuffLife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lost" id="MZj-zA-C2x" customClass="MapViewController" customModule="RuffLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B5g-cq-4tZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
