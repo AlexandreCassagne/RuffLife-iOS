@@ -103,11 +103,11 @@
 			children = (
 				AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */,
 				AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */,
-				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
 				AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */,
 				AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */,
 				AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */,
 				AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
+				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
 				AC0D62251F9BD9E600A15DD1 /* Info.plist */,
 			);
 			path = RuffLife;
