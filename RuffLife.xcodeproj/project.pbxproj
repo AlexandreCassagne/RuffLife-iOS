@@ -17,6 +17,7 @@
 		AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */; };
 		AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */; };
 		AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC0D624B1F9BE7BC00A15DD1 /* .gitignore */; };
+		D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
 		AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
 		AC0D624B1F9BE7BC00A15DD1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
 				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
 				AC0D62251F9BD9E600A15DD1 /* Info.plist */,
+				D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */,
 			);
 			path = RuffLife;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */,
 				AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */,
 				AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */,
+				D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */,
 				AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,10 +443,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				DEVELOPMENT_TEAM = 8D789QW9PW;
 				INFOPLIST_FILE = RuffLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_BUNDLE_IDENTIFIER = le.RuffLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,10 +458,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				DEVELOPMENT_TEAM = 8D789QW9PW;
 				INFOPLIST_FILE = RuffLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_BUNDLE_IDENTIFIER = le.RuffLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
