@@ -38,6 +38,16 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
 	@IBAction func submit(_ sender: Any) {
+		let newPet = Model();
+		newPet?.FirstName = firstName.text
+		
+		newPet?.PhoneNumber = number.text
+		newPet?.Breed = breed.text
+		newPet?.Color = color.text
+		newPet?.ImageURL = ""
+		newPet?.lat = 38.909284
+		newPet?.lon = -77.041041
+		
 		
 	}
 	@IBAction func autofill(_ sender: Any) {
