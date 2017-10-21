@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QKF-x9-Nzn">
-                                <rect key="frame" x="8" y="20" width="304" height="220"/>
+                                <rect key="frame" x="8" y="20" width="304" height="258"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9IV-VY-ylB">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
@@ -206,6 +206,14 @@
                                             <action selector="autofill:" destination="5t5-zY-Nky" eventType="touchUpInside" id="Ykp-Ev-nye"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-WO-rcd">
+                                        <rect key="frame" x="0.0" y="228" width="304" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="autofill:" destination="5t5-zY-Nky" eventType="touchUpInside" id="2pX-mt-qc0"/>
+                                            <action selector="submit:" destination="kAO-kk-fL0" eventType="touchUpInside" id="Ksu-Qx-bCw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Autofill automatically fills this form for breed, location, and contact details." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sTQ-vk-op2">
@@ -218,7 +226,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-sb-UGe">
-                                <rect key="frame" x="16" y="248" width="288" height="241"/>
+                                <rect key="frame" x="16" y="286" width="288" height="203"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
