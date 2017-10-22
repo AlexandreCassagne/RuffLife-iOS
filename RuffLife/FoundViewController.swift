@@ -31,7 +31,9 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 			let breed = top["Tag"] as! String
 			
 			if (p > 0.08) {
-				self.breed.text = breed
+				OperationQueue.main.addOperation({
+					self.breed.text = breed
+				})
 			}
 		}
 	}
