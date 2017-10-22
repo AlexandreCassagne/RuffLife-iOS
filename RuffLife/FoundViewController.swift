@@ -101,11 +101,11 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
 			DispatchQueue.main.async {
 				let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
-				alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-				if let error = task.error as? NSError {
+				if let error = task.error as NSError? {
 					alert.title = "Failure"
 					alert.message = "The request failed. Error: \(error)"
-					alert.present(alert, animated: true, completion: nil)
+					alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+					self.present(alert, animated: true, completion: nil)
 
 				} else {
 					// Do something with task.result or perform other operations.
