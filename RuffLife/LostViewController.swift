@@ -11,11 +11,12 @@ import MapKit
 import AWSDynamoDB
 import CoreLocation
 
-class LostViewController: UIViewController, CLLocationManagerDelegate {
+class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     var dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default ()
     var mapView: MKMapView!
     let annotation = MKPointAnnotation()
-     let locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
+
     override func loadView() {
         // Create a map view
         mapView = MKMapView()
@@ -56,31 +57,49 @@ class LostViewController: UIViewController, CLLocationManagerDelegate {
             break
         }
     }
-    
-    
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [CLLocation]){
-        mapView.removeAnnotation(annotation)
-        
-        let location = locations.last! as CLLocation
-        
-        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-        
-        //set region on the map
-        mapView.setRegion(region, animated: true)
-        
-        annotation.coordinate = location.coordinate
-        mapView.addAnnotation(annotation)
-    }
+//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+//        let location = locations.last as! CLLocation
+//
+//        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+//        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+//
+//        mapView.setRegion(region, animated: true)
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-       // locationManager.requestLocation()
-        locationManager.startUpdatingLocation()
         
-        //Querying dynambodb
+        mapView.delegate = self
+        mapView.showsUserLocation = true
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        
+        //Check for Location Services
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager = CLLocationManager()
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.requestWhenInUseAuthorization()
+        }
+        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
+        //Zoom to user location
+        let noLocation = CLLocationCoordinate2D()
+        let viewRegion = MKCoordinateRegionMakeWithDistance(noLocation, 200, 200)
+        mapView.setRegion(viewRegion, animated: true)
+        
+        DispatchQueue.main.async {
+            self.locationManager.startUpdatingLocation()
+        }
+//        locationManager = CLLocationManager();
+//        locationManager.delegate = self
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.requestAlwaysAuthorization()
+//        locationManager.startUpdatingLocation()
+
+       // Querying dynambodb
 //        dynamoDBObjectMapper.load(RuffLife.self, hashKey: 0, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
 //            if let error = task.error as? NSError {
 //                print("The request failed. Error: \(error)")
@@ -90,7 +109,16 @@ class LostViewController: UIViewController, CLLocationManagerDelegate {
 //            }
 //            return nil
 //        })
+//        mapView.addAnnotation(annotation)
         
     }
-
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let location = locations.last as! CLLocation
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        var region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        region.center = mapView.userLocation.coordinate
+        mapView.setRegion(region, animated: true)
+    }
 }
+
+
