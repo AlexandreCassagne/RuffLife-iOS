@@ -41,7 +41,7 @@ class Azure {
 			print("responseString = \(responseString)")
 		}
 		
-		
+		task.resume()
 
 	}
 	
