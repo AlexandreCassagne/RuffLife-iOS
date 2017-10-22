@@ -7,7 +7,25 @@
 		<key>RuffLife.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AC0D62151F9BD9E500A15DD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC0D62291F9BD9E600A15DD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC0D62341F9BD9E600A15DD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
