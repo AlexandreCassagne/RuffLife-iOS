@@ -20,15 +20,17 @@ class UploadImage: NSObject {
 		let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
 		let filePath = NSString(string: paths[0]).appendingPathComponent("\(NSDate())")
 		fileURL = URL(fileURLWithPath: filePath)
-		try! UIImagePNGRepresentation(image)?.write(to: fileURL)
+		try! UIImageJPEGRepresentation(image, 0.9)?.write(to: fileURL)
 	}
 	
 	func post(_ a: @escaping () -> () ) {
 		let uploadRequest = AWSS3TransferManagerUploadRequest()!
 		uploadRequest.body = fileURL
-		uploadRequest.bucket = "rufflifeimg2"
-		uploadRequest.contentType = "image/png"
+		uploadRequest.bucket = "rufflifeimg2/img"
+		uploadRequest.contentType = "image/jpeg"
 		uploadRequest.acl = .publicRead
+		uploadRequest.key = "\(NSDate().timeIntervalSince1970).jpg"
+		
 		
 		let transferManager = AWSS3TransferManager.default()
 		transferManager.upload(uploadRequest).continueWith(block: { (task: AWSTask) -> Any? in
@@ -41,7 +43,6 @@ class UploadImage: NSObject {
 			if task.result != nil {
 				let url = AWSS3.default().configuration.endpoint.url!
 				self.publicURL = (url.appendingPathComponent(uploadRequest.bucket!).appendingPathComponent(uploadRequest.key!))
-				print("Uploaded to:\(self.publicURL)")
 				a()
 			}
 			return nil
