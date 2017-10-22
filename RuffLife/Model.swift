@@ -9,6 +9,7 @@
 import UIKit
 import AWSDynamoDB
 
+@objcMembers
 class RuffLife: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
 	// User
 	@objc var FirstName: String?
@@ -27,11 +28,11 @@ class RuffLife: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
 	
 	@objc var PetID: NSNumber?
 	
-	class func dynamoDBTableName() -> String {
+	public static func dynamoDBTableName() -> String {
 		return "RuffLife"
 	}
 	
-	class func hashKeyAttribute() -> String {
+	public static func hashKeyAttribute() -> String {
 		return "PetID"
 	}
 	
