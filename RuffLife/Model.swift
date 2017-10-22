@@ -22,10 +22,10 @@ class RuffLife: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
 	@objc var ImageURL: String?
 	
 	// Location
-	var lat: NSNumber?
-	var lon: NSNumber?
+	@objc var lat: NSNumber?
+	@objc var lon: NSNumber?
 	
-	var PetID: NSNumber?
+	@objc var PetID: NSNumber?
 	
 	class func dynamoDBTableName() -> String {
 		return "RuffLife"
