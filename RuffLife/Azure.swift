@@ -9,7 +9,7 @@
 import UIKit
 
 class Azure {
-	private let endpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/ab2f8c58-1956-4af1-854c-85526a91a6b4/image"
+	private let endpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/ab2f8c58-1956-4af1-854c-85526a91a6b4/url?iterationId=65ed5d39-5c94-4924-8f34-25987f4f8fbd"
 	private var request : URLRequest
 	
 	init() {
