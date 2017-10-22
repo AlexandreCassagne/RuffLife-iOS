@@ -50,7 +50,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		newPet.ImageURL = "http://pornhub.com/"
 		newPet.lat = 38.909284
 		newPet.lon = -77.041041
-		
+		newPet.PetID = NSNumber(integerLiteral: Int(arc4random()))
 		print(newPet.FirstName)
 		
 		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
