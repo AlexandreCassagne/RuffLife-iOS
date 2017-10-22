@@ -19,6 +19,7 @@
 		AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */; };
 		AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC0D624B1F9BE7BC00A15DD1 /* .gitignore */; };
 		ACB300761F9C0B03007883D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB300751F9C0B03007883D1 /* Model.swift */; };
+		ACC0BB061F9C3C5A00368613 /* UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0BB051F9C3C5A00368613 /* UploadImage.swift */; };
 		D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
 		AC0D624B1F9BE7BC00A15DD1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ACB300751F9C0B03007883D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ACC0BB051F9C3C5A00368613 /* UploadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadImage.swift; path = /Users/Alexandre/RuffLife/RuffLife/UploadImage.swift; sourceTree = "<absolute>"; };
 		BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.release.xcconfig"; sourceTree = "<group>"; };
 		D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 		AC0D62181F9BD9E600A15DD1 /* RuffLife */ = {
 			isa = PBXGroup;
 			children = (
+				ACC0BB051F9C3C5A00368613 /* UploadImage.swift */,
 				AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */,
 				AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */,
 				AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */,
@@ -375,6 +378,7 @@
 				AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */,
 				AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */,
 				AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */,
+				ACC0BB061F9C3C5A00368613 /* UploadImage.swift in Sources */,
 				ACB300761F9C0B03007883D1 /* Model.swift in Sources */,
 				D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */,
 				AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */,
