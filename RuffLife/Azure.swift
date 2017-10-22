@@ -22,7 +22,8 @@ class Azure {
 	func request(_ url : String) {
 		
 		let json = ["Url": url]
-		let jsonData = try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+		let jsonData = try! JSONSerialization.data(withJSONObject: json, options: .sortedKeys)
+		print (jsonData);
 
 		
 		
