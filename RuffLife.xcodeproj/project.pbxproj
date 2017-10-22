@@ -20,6 +20,7 @@
 		AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC0D624B1F9BE7BC00A15DD1 /* .gitignore */; };
 		ACB300761F9C0B03007883D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB300751F9C0B03007883D1 /* Model.swift */; };
 		ACFD3AAC1F9C438B001B8083 /* Azure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD3AAB1F9C438B001B8083 /* Azure.swift */; };
+		D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */; };
 		D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */; };
 		FABECE411F9C6CAF00AF8DF4 /* UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */; };
 /* End PBXBuildFile section */
@@ -61,8 +62,10 @@
 		AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
 		AC0D624B1F9BE7BC00A15DD1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ACB300751F9C0B03007883D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ACC0BB051F9C3C5A00368613 /* UploadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadImage.swift; path = "/Users/Khoa/Desktop/RuffLife-iOS/RuffLife/UploadImage.swift"; sourceTree = "<absolute>"; };
 		ACFD3AAB1F9C438B001B8083 /* Azure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azure.swift; sourceTree = "<group>"; };
 		BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.release.xcconfig"; sourceTree = "<group>"; };
+		D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */,
 				9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +100,7 @@
 		4EF626F2C1FEB9871699B1BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */,
 				359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */,
 			);
 			name = Frameworks;
@@ -242,6 +247,11 @@
 					AC0D62151F9BD9E500A15DD1 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AC0D62291F9BD9E600A15DD1 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -553,10 +563,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				DEVELOPMENT_TEAM = 8D789QW9PW;
 				INFOPLIST_FILE = RuffLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_BUNDLE_IDENTIFIER = the.ruff.life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,10 +579,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				DEVELOPMENT_TEAM = 8D789QW9PW;
 				INFOPLIST_FILE = RuffLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_BUNDLE_IDENTIFIER = the.ruff.life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
