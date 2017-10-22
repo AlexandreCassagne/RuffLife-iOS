@@ -19,15 +19,30 @@ class Azure {
 		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 	}
 	
-	func request(_ url : String) -> Dictionary<String, Any> {
+	func request(_ url : String) {
 		
 		let json = ["Url": url]
 		let jsonData = try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
 
 		request.httpBody = jsonData
 		
-		URLSession()
+		let task = URLSession.shared.dataTask(with: request) { data, response, error in
+			guard let data = data, error == nil else {                                                 // check for fundamental networking error
+				print("error=\(error)")
+				return
+			}
+			
+			if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+				print("statusCode should be 200, but is \(httpStatus.statusCode)")
+				print("response = \(response)")
+			}
+			
+			let responseString = String(data: data, encoding: .utf8)
+			print("responseString = \(responseString)")
+		}
 		
+		
+
 	}
 	
 	
