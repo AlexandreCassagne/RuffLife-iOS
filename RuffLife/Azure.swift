@@ -24,7 +24,11 @@ class Azure {
 		let json = ["Url": url]
 		let jsonData = try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
 
+		
+		
 		request.httpBody = jsonData
+		
+		print(request.debugDescription)
 		
 		let task = URLSession.shared.dataTask(with: request) { data, response, error in
 			guard let data = data, error == nil else {                                                 // check for fundamental networking error
