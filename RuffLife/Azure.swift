@@ -13,16 +13,16 @@ class Azure {
 	private var request : URLRequest
 	
 	init() {
-		request = URLRequest(url: URL(endpoint))
+		request = URLRequest(url: URL(string: self.endpoint)!)
 		request.httpMethod = "POST"
 		request.setValue("5956214919b442b7b7ad0772fd491aa1", forHTTPHeaderField: "Prediction-Key")
 		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 	}
 	
-	func request(_ url : URL) -> Dictionary<String, Any> {
+	func request(_ url : String) -> Dictionary<String, Any> {
 		var d = [String: String]()
 		d["URL"] = url
-		request.httpBody = d
+		return [:]
 	}
 	
 	
