@@ -9,23 +9,23 @@
 import UIKit
 import AWSDynamoDB
 
-class Model: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+class RuffLife: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
 	// User
-	var FirstName: String?
-	var LastName: String?
-	var PhoneNumber: String?
+	@objc var FirstName: String?
+	@objc var LastName: String?
+	@objc var PhoneNumber: String?
 
 	// Dog
-	var Color: String?
-	var Breed: String?
+	@objc var Color: String?
+	@objc var Breed: String?
 	
-	var ImageURL: String?
+	@objc var ImageURL: String?
 	
 	// Location
-	var lat: Double?
-	var lon: Double?
+	var lat: NSNumber?
+	var lon: NSNumber?
 	
-	var PetID: Int?
+	var PetID: NSNumber?
 	
 	class func dynamoDBTableName() -> String {
 		return "RuffLife"

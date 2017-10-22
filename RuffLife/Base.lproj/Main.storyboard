@@ -118,13 +118,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0E-n8-eid">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTc-WW-JLG">
-                                                <rect key="frame" x="49.5" y="0.0" width="254.5" height="30"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="230.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -135,13 +135,13 @@
                                         <rect key="frame" x="0.0" y="38" width="304" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-K4-IU7">
-                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhB-Ee-hFJ">
-                                                <rect key="frame" x="53.5" y="0.0" width="250.5" height="30"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="230.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -169,13 +169,13 @@
                                         <rect key="frame" x="0.0" y="114" width="304" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtE-hF-WUL">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6mS-oi-ZVt">
-                                                <rect key="frame" x="53" y="0.0" width="251" height="30"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="230.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -186,13 +186,13 @@
                                         <rect key="frame" x="0.0" y="152" width="304" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad3-af-x5I">
-                                                <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mH5-KH-Ij8">
-                                                <rect key="frame" x="70" y="0.0" width="234" height="30"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="230.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -210,11 +210,16 @@
                                         <rect key="frame" x="0.0" y="228" width="304" height="30"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
-                                            <action selector="autofill:" destination="5t5-zY-Nky" eventType="touchUpInside" id="2pX-mt-qc0"/>
                                             <action selector="submit:" destination="kAO-kk-fL0" eventType="touchUpInside" id="Ksu-Qx-bCw"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="OTc-WW-JLG" firstAttribute="width" secondItem="4Z8-5p-LT9" secondAttribute="width" id="1dQ-Ku-tmx"/>
+                                    <constraint firstItem="4Z8-5p-LT9" firstAttribute="width" secondItem="6mS-oi-ZVt" secondAttribute="width" id="8eC-xa-Hk3"/>
+                                    <constraint firstItem="YhB-Ee-hFJ" firstAttribute="width" secondItem="mH5-KH-Ij8" secondAttribute="width" id="AKU-dg-6Tt"/>
+                                    <constraint firstItem="YhB-Ee-hFJ" firstAttribute="width" secondItem="4Z8-5p-LT9" secondAttribute="width" id="Ogv-Kg-MI7"/>
+                                </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Autofill automatically fills this form for breed, location, and contact details." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sTQ-vk-op2">
                                 <rect key="frame" x="12" y="497" width="296" height="51"/>

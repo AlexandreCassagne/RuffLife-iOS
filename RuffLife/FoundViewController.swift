@@ -41,15 +41,17 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	@IBAction func submit(_ sender: Any) {
 		let db = AWSDynamoDBObjectMapper.default()
 		
-		let newPet = Model()!;
+		let newPet = RuffLife()!
 		newPet.FirstName = firstName.text
-		
+		newPet.LastName = "hello"
 		newPet.PhoneNumber = number.text
 		newPet.Breed = breed.text
 		newPet.Color = color.text
 		newPet.ImageURL = "http://pornhub.com/"
 		newPet.lat = 38.909284
 		newPet.lon = -77.041041
+		
+		print(newPet.FirstName)
 		
 		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
 			if let error = task.error as? NSError {
