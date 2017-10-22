@@ -11,6 +11,9 @@ import AWSDynamoDB
 
 class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+	
+	var uploadImage: UploadImage?
+	
 	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
 		picker.dismiss(animated: true, completion: nil)
 	}
@@ -18,11 +21,12 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
 		guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
 		pictureView.image = image
-
-		let a = UIImagePNGRepresentation(image)!
-		let base64 = a.base64EncodedString()
 		
-//		print(base64)
+		uploadImage = UploadImage(image: image)
+		uploadImage?.post {
+			print("Returned: \(self.uploadImage?.publicURL)")
+			
+		}
 		
 		picker.dismiss(animated: true, completion: nil)
 	}
@@ -41,7 +45,9 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	@IBAction func submit(_ sender: Any) {
 		let db = AWSDynamoDBObjectMapper.default()
 		
+		
 		let newPet = RuffLife()!
+		
 		newPet.FirstName = firstName.text
 		newPet.LastName = "hello"
 		newPet.PhoneNumber = number.text
@@ -50,7 +56,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		newPet.ImageURL = "http://pornhub.com/"
 		newPet.lat = 38.909284
 		newPet.lon = -77.041041
-		
+		newPet.PetID = NSNumber(integerLiteral: Int(arc4random()))
 		print(newPet.FirstName)
 		
 		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
@@ -68,6 +74,8 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		picker.sourceType = .camera
 		picker.delegate = self
 //		self.show(picker, sender: self)
+		
+		
 		present(picker, animated: true, completion: nil)
 	}
 	
