@@ -8,11 +8,13 @@
 
 import UIKit
 import MapKit
+import AWSDynamoDB
 
 class LostViewController: UIViewController {
-    
+    var dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default ()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
 }

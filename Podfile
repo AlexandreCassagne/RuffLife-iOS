@@ -5,6 +5,7 @@ use_frameworks!
 
 target :'RuffLife' do
     pod 'AWSAutoScaling'
+    pod 'AWSCognito'
     pod 'AWSDynamoDB'
     pod 'AWSS3'
     pod 'AWSSES'
