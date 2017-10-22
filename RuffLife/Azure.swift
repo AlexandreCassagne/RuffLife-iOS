@@ -19,7 +19,7 @@ class Azure {
 		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 	}
 	
-	func request(url : String, _ callback: @escaping (Any) -> ()) {
+	func request(url : String, _ callback: @escaping ([Any]) -> ()) {
 		
 		let json = ["Url": url]
 		let jsonData = try! JSONSerialization.data(withJSONObject: json, options: .sortedKeys)
@@ -42,7 +42,7 @@ class Azure {
 			
 			let responseString = String(data: data, encoding: .utf8)
 			if let obj = (try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]) {
-				callback(obj!["Predictions"])
+				callback(obj!["Predictions"] as! Array<Any>)
 			} else {
 				print("Invalid response string: \(responseString)")
 			}

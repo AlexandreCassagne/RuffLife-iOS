@@ -30,8 +30,15 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 //			url = self.uploadImage?.publicURL
 //		}
 		let a = Azure()
-		a.request(url: "https://s3.amazonaws.com/rufflifeimg2/img/1508644705.70983.jpg") { json in
-			print(json)
+		a.request(url: "https://s3.amazonaws.com/rufflifeimg2/img/1508644705.70983.jpg") { predictions in
+			let top = predictions[0] as! [String: Any]
+			print(top)
+			let p = top["Probability"] as! Double
+			let breed = top["Tag"] as! String
+			
+			if (p > 0.08) {
+				self.breed.text = breed
+			}
 		}
 		picker.dismiss(animated: true, completion: nil)
 	}
