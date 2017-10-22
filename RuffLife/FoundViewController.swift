@@ -64,7 +64,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	
 	@IBOutlet weak var location: UITextField!
 	@IBOutlet weak var breed: UITextField!
-	@IBOutlet weak var color: UITextField!
+//	@IBOutlet weak var color: UITextField!
 	@IBOutlet weak var firstName: UITextField!
 	@IBOutlet weak var number: UITextField!
 	@IBOutlet weak var pictureView: UIImageView!
@@ -72,35 +72,51 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
 		imagePicker.delegate = self
 		locationManager.requestWhenInUseAuthorization()
-		
+		locationManager.delegate = self
         // Do any additional setup after loading the view.
     }
 	@IBAction func submit(_ sender: Any) {
-		
-		guard let coordinate = self.locationCoordinate else {
+		print("Hello!")
+		guard let coordinate = self.locationCoordinate, let name = firstName.text, let phoneNumber = number.text else {
+			print("Fail :( " )
 			let alert = UIAlertController(title: "Incomplete Form", message: "Please ensure the form is completely filled out before proceeding.", preferredStyle: .alert)
-			alert.show(self, sender: self)
+			alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+			self.present(alert, animated: true, completion: nil)
 			return
 		}
 		
 		let db = AWSDynamoDBObjectMapper.default()
 		let newPet = RuffLife()!
 		
-		newPet.FirstName = firstName.text
-		newPet.LastName = "Empty"
-		newPet.PhoneNumber = number.text
+		newPet.FirstName = name
+//		newPet.LastName = "Empty"
+		newPet.PhoneNumber = phoneNumber
 		newPet.Breed = breed.text
-		newPet.Color = color.text
+//		newPet.Color = color.text
 		newPet.ImageURL = url!
-		newPet.lat = coordinate.latitude as! NSNumber
-		newPet.lon = coordinate.longitude as! NSNumber
+		newPet.lat = coordinate.latitude as NSNumber
+		newPet.lon = coordinate.longitude as NSNumber
 		newPet.PetID = NSNumber(integerLiteral: Int(arc4random()))
 		
 		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
-			if let error = task.error as? NSError {
-				print("The request failed. Error: \(error)")
-			} else {
-				// Do something with task.result or perform other operations.
+			DispatchQueue.main.async {
+				let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+				alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+				if let error = task.error as? NSError {
+					alert.title = "Failure"
+					alert.message = "The request failed. Error: \(error)"
+					alert.present(alert, animated: true, completion: nil)
+
+				} else {
+					// Do something with task.result or perform other operations.
+					alert.title = "Success"
+					alert.message = "Successfully published to location of this pet!"
+					alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+					self.present(alert, animated: true, completion: {
+						self.navigationController?.popViewController(animated: true)
+					})
+
+				}
 			}
 			return nil
 		})
@@ -117,7 +133,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		}
 		else
 		{
-			let alert  = UIAlertController(title: "Warning", message: "You don't have camera", preferredStyle: .alert)
+			let alert  = UIAlertController(title: "Warning", message: "You don't have a camera", preferredStyle: .alert)
 			alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 			self.present(alert, animated: true, completion: nil)
 		}

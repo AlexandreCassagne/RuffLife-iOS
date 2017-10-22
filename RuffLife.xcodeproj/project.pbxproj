@@ -1,703 +1,703 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 48;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
 
 /* Begin PBXBuildFile section */
-        9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */; };
-        AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */; };
-        AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */; };
-        AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */; };
-        AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */; };
-        AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */; };
-        AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */; };
-        AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */; };
-        AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */; };
-        AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */; };
-        AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC0D624B1F9BE7BC00A15DD1 /* .gitignore */; };
-        ACB300761F9C0B03007883D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB300751F9C0B03007883D1 /* Model.swift */; };
-        ACFD3AAC1F9C438B001B8083 /* Azure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD3AAB1F9C438B001B8083 /* Azure.swift */; };
-        D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */; };
-        D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */; };
-        FABECE411F9C6CAF00AF8DF4 /* UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */; };
+		9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */; };
+		AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */; };
+		AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */; };
+		AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */; };
+		AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */; };
+		AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */; };
+		AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */; };
+		AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */; };
+		AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */; };
+		AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */; };
+		AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC0D624B1F9BE7BC00A15DD1 /* .gitignore */; };
+		ACB300761F9C0B03007883D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB300751F9C0B03007883D1 /* Model.swift */; };
+		ACFD3AAC1F9C438B001B8083 /* Azure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD3AAB1F9C438B001B8083 /* Azure.swift */; };
+		D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */; };
+		D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */; };
+		FABECE411F9C6CAF00AF8DF4 /* UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-        AC0D622B1F9BD9E600A15DD1 /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = AC0D620E1F9BD9E500A15DD1 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = AC0D62151F9BD9E500A15DD1;
-            remoteInfo = RuffLife;
-        };
-        AC0D62361F9BD9E600A15DD1 /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = AC0D620E1F9BD9E500A15DD1 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = AC0D62151F9BD9E500A15DD1;
-            remoteInfo = RuffLife;
-        };
+		AC0D622B1F9BD9E600A15DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0D620E1F9BD9E500A15DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D62151F9BD9E500A15DD1;
+			remoteInfo = RuffLife;
+		};
+		AC0D62361F9BD9E600A15DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0D620E1F9BD9E500A15DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D62151F9BD9E500A15DD1;
+			remoteInfo = RuffLife;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-        359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RuffLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-        958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.debug.xcconfig"; sourceTree = "<group>"; };
-        AC0D62161F9BD9E600A15DD1 /* RuffLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuffLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
-        AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-        AC0D621E1F9BD9E600A15DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        AC0D62231F9BD9E600A15DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        AC0D62251F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeTests.swift; sourceTree = "<group>"; };
-        AC0D62301F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeUITests.swift; sourceTree = "<group>"; };
-        AC0D623B1F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
-        AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
-        AC0D624B1F9BE7BC00A15DD1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-        ACB300751F9C0B03007883D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-        ACFD3AAB1F9C438B001B8083 /* Azure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azure.swift; sourceTree = "<group>"; };
-        BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.release.xcconfig"; sourceTree = "<group>"; };
-        D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-        D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-        FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImage.swift; sourceTree = "<group>"; };
+		359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RuffLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0D62161F9BD9E600A15DD1 /* RuffLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuffLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC0D621E1F9BD9E600A15DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0D62231F9BD9E600A15DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0D62251F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeTests.swift; sourceTree = "<group>"; };
+		AC0D62301F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuffLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuffLifeUITests.swift; sourceTree = "<group>"; };
+		AC0D623B1F9BD9E600A15DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
+		AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
+		AC0D624B1F9BE7BC00A15DD1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ACB300751F9C0B03007883D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ACFD3AAB1F9C438B001B8083 /* Azure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azure.swift; sourceTree = "<group>"; };
+		BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuffLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife.release.xcconfig"; sourceTree = "<group>"; };
+		D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        AC0D62131F9BD9E500A15DD1 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */,
-                9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        AC0D62271F9BD9E600A15DD1 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        AC0D62321F9BD9E600A15DD1 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		AC0D62131F9BD9E500A15DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */,
+				9AE9289E620F610BA14D1631 /* Pods_RuffLife.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62271F9BD9E600A15DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62321F9BD9E600A15DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        4EF626F2C1FEB9871699B1BE /* Frameworks */ = {
-            isa = PBXGroup;
-            children = (
-                D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */,
-                359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */,
-            );
-            name = Frameworks;
-            sourceTree = "<group>";
-        };
-        A372CABC6E56F516E8FECE3E /* Pods */ = {
-            isa = PBXGroup;
-            children = (
-                958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */,
-                BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */,
-            );
-            name = Pods;
-            sourceTree = "<group>";
-        };
-        AC0D620D1F9BD9E500A15DD1 = {
-            isa = PBXGroup;
-            children = (
-                AC0D624B1F9BE7BC00A15DD1 /* .gitignore */,
-                AC0D62181F9BD9E600A15DD1 /* RuffLife */,
-                AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */,
-                AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */,
-                AC0D62171F9BD9E600A15DD1 /* Products */,
-                A372CABC6E56F516E8FECE3E /* Pods */,
-                4EF626F2C1FEB9871699B1BE /* Frameworks */,
-            );
-            sourceTree = "<group>";
-        };
-        AC0D62171F9BD9E600A15DD1 /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                AC0D62161F9BD9E600A15DD1 /* RuffLife.app */,
-                AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */,
-                AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */,
-            );
-            name = Products;
-            sourceTree = "<group>";
-        };
-        AC0D62181F9BD9E600A15DD1 /* RuffLife */ = {
-            isa = PBXGroup;
-            children = (
-                FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */,
-                ACFD3AAB1F9C438B001B8083 /* Azure.swift */,
-                AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */,
-                AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */,
-                AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */,
-                ACB300751F9C0B03007883D1 /* Model.swift */,
-                AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */,
-                AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */,
-                AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
-                AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
-                AC0D62251F9BD9E600A15DD1 /* Info.plist */,
-                D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */,
-            );
-            path = RuffLife;
-            sourceTree = "<group>";
-        };
-        AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */ = {
-            isa = PBXGroup;
-            children = (
-                AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */,
-                AC0D62301F9BD9E600A15DD1 /* Info.plist */,
-            );
-            path = RuffLifeTests;
-            sourceTree = "<group>";
-        };
-        AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */ = {
-            isa = PBXGroup;
-            children = (
-                AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */,
-                AC0D623B1F9BD9E600A15DD1 /* Info.plist */,
-            );
-            path = RuffLifeUITests;
-            sourceTree = "<group>";
-        };
+		4EF626F2C1FEB9871699B1BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */,
+				359F9B69CC66DC336D88C53B /* Pods_RuffLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A372CABC6E56F516E8FECE3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */,
+				BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC0D620D1F9BD9E500A15DD1 = {
+			isa = PBXGroup;
+			children = (
+				AC0D624B1F9BE7BC00A15DD1 /* .gitignore */,
+				AC0D62181F9BD9E600A15DD1 /* RuffLife */,
+				AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */,
+				AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */,
+				AC0D62171F9BD9E600A15DD1 /* Products */,
+				A372CABC6E56F516E8FECE3E /* Pods */,
+				4EF626F2C1FEB9871699B1BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0D62171F9BD9E600A15DD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D62161F9BD9E600A15DD1 /* RuffLife.app */,
+				AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */,
+				AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0D62181F9BD9E600A15DD1 /* RuffLife */ = {
+			isa = PBXGroup;
+			children = (
+				FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */,
+				ACFD3AAB1F9C438B001B8083 /* Azure.swift */,
+				AC0D62191F9BD9E600A15DD1 /* AppDelegate.swift */,
+				AC0D621B1F9BD9E600A15DD1 /* ViewController.swift */,
+				AC0D62471F9BDD7100A15DD1 /* FoundViewController.swift */,
+				ACB300751F9C0B03007883D1 /* Model.swift */,
+				AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */,
+				AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */,
+				AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
+				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
+				AC0D62251F9BD9E600A15DD1 /* Info.plist */,
+				D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */,
+			);
+			path = RuffLife;
+			sourceTree = "<group>";
+		};
+		AC0D622D1F9BD9E600A15DD1 /* RuffLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D622E1F9BD9E600A15DD1 /* RuffLifeTests.swift */,
+				AC0D62301F9BD9E600A15DD1 /* Info.plist */,
+			);
+			path = RuffLifeTests;
+			sourceTree = "<group>";
+		};
+		AC0D62381F9BD9E600A15DD1 /* RuffLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D62391F9BD9E600A15DD1 /* RuffLifeUITests.swift */,
+				AC0D623B1F9BD9E600A15DD1 /* Info.plist */,
+			);
+			path = RuffLifeUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        AC0D62151F9BD9E500A15DD1 /* RuffLife */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */;
-            buildPhases = (
-                B1378324E242EF7295993ADA /* [CP] Check Pods Manifest.lock */,
-                AC0D62121F9BD9E500A15DD1 /* Sources */,
-                AC0D62131F9BD9E500A15DD1 /* Frameworks */,
-                AC0D62141F9BD9E500A15DD1 /* Resources */,
-                11EFAF4884AC7A0E6821772D /* [CP] Embed Pods Frameworks */,
-                2655FA3445B04643948A6B76 /* [CP] Copy Pods Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = RuffLife;
-            productName = RuffLife;
-            productReference = AC0D62161F9BD9E600A15DD1 /* RuffLife.app */;
-            productType = "com.apple.product-type.application";
-        };
-        AC0D62291F9BD9E600A15DD1 /* RuffLifeTests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = AC0D62411F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeTests" */;
-            buildPhases = (
-                AC0D62261F9BD9E600A15DD1 /* Sources */,
-                AC0D62271F9BD9E600A15DD1 /* Frameworks */,
-                AC0D62281F9BD9E600A15DD1 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                AC0D622C1F9BD9E600A15DD1 /* PBXTargetDependency */,
-            );
-            name = RuffLifeTests;
-            productName = RuffLifeTests;
-            productReference = AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */;
-            productType = "com.apple.product-type.bundle.unit-test";
-        };
-        AC0D62341F9BD9E600A15DD1 /* RuffLifeUITests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = AC0D62441F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeUITests" */;
-            buildPhases = (
-                AC0D62311F9BD9E600A15DD1 /* Sources */,
-                AC0D62321F9BD9E600A15DD1 /* Frameworks */,
-                AC0D62331F9BD9E600A15DD1 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                AC0D62371F9BD9E600A15DD1 /* PBXTargetDependency */,
-            );
-            name = RuffLifeUITests;
-            productName = RuffLifeUITests;
-            productReference = AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */;
-            productType = "com.apple.product-type.bundle.ui-testing";
-        };
+		AC0D62151F9BD9E500A15DD1 /* RuffLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */;
+			buildPhases = (
+				B1378324E242EF7295993ADA /* [CP] Check Pods Manifest.lock */,
+				AC0D62121F9BD9E500A15DD1 /* Sources */,
+				AC0D62131F9BD9E500A15DD1 /* Frameworks */,
+				AC0D62141F9BD9E500A15DD1 /* Resources */,
+				11EFAF4884AC7A0E6821772D /* [CP] Embed Pods Frameworks */,
+				2655FA3445B04643948A6B76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RuffLife;
+			productName = RuffLife;
+			productReference = AC0D62161F9BD9E600A15DD1 /* RuffLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0D62291F9BD9E600A15DD1 /* RuffLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D62411F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeTests" */;
+			buildPhases = (
+				AC0D62261F9BD9E600A15DD1 /* Sources */,
+				AC0D62271F9BD9E600A15DD1 /* Frameworks */,
+				AC0D62281F9BD9E600A15DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D622C1F9BD9E600A15DD1 /* PBXTargetDependency */,
+			);
+			name = RuffLifeTests;
+			productName = RuffLifeTests;
+			productReference = AC0D622A1F9BD9E600A15DD1 /* RuffLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC0D62341F9BD9E600A15DD1 /* RuffLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D62441F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeUITests" */;
+			buildPhases = (
+				AC0D62311F9BD9E600A15DD1 /* Sources */,
+				AC0D62321F9BD9E600A15DD1 /* Frameworks */,
+				AC0D62331F9BD9E600A15DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D62371F9BD9E600A15DD1 /* PBXTargetDependency */,
+			);
+			name = RuffLifeUITests;
+			productName = RuffLifeUITests;
+			productReference = AC0D62351F9BD9E600A15DD1 /* RuffLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        AC0D620E1F9BD9E500A15DD1 /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastSwiftUpdateCheck = 0900;
-                LastUpgradeCheck = 0900;
-                ORGANIZATIONNAME = Cassagne;
-                TargetAttributes = {
-                    AC0D62151F9BD9E500A15DD1 = {
-                        CreatedOnToolsVersion = 9.0.1;
-                        ProvisioningStyle = Automatic;
-                        SystemCapabilities = {
-                            com.apple.Maps.iOS = {
-                                enabled = 1;
-                            };
-                        };
-                    };
-                    AC0D62291F9BD9E600A15DD1 = {
-                        CreatedOnToolsVersion = 9.0.1;
-                        ProvisioningStyle = Automatic;
-                        TestTargetID = AC0D62151F9BD9E500A15DD1;
-                    };
-                    AC0D62341F9BD9E600A15DD1 = {
-                        CreatedOnToolsVersion = 9.0.1;
-                        ProvisioningStyle = Automatic;
-                        TestTargetID = AC0D62151F9BD9E500A15DD1;
-                    };
-                };
-            };
-            buildConfigurationList = AC0D62111F9BD9E500A15DD1 /* Build configuration list for PBXProject "RuffLife" */;
-            compatibilityVersion = "Xcode 8.0";
-            developmentRegion = en;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-                Base,
-            );
-            mainGroup = AC0D620D1F9BD9E500A15DD1;
-            productRefGroup = AC0D62171F9BD9E600A15DD1 /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                AC0D62151F9BD9E500A15DD1 /* RuffLife */,
-                AC0D62291F9BD9E600A15DD1 /* RuffLifeTests */,
-                AC0D62341F9BD9E600A15DD1 /* RuffLifeUITests */,
-            );
-        };
+		AC0D620E1F9BD9E500A15DD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Cassagne;
+				TargetAttributes = {
+					AC0D62151F9BD9E500A15DD1 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					AC0D62291F9BD9E600A15DD1 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC0D62151F9BD9E500A15DD1;
+					};
+					AC0D62341F9BD9E600A15DD1 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC0D62151F9BD9E500A15DD1;
+					};
+				};
+			};
+			buildConfigurationList = AC0D62111F9BD9E500A15DD1 /* Build configuration list for PBXProject "RuffLife" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0D620D1F9BD9E500A15DD1;
+			productRefGroup = AC0D62171F9BD9E600A15DD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0D62151F9BD9E500A15DD1 /* RuffLife */,
+				AC0D62291F9BD9E600A15DD1 /* RuffLifeTests */,
+				AC0D62341F9BD9E600A15DD1 /* RuffLifeUITests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-        AC0D62141F9BD9E500A15DD1 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */,
-                AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */,
-                AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */,
-                AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        AC0D62281F9BD9E600A15DD1 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        AC0D62331F9BD9E600A15DD1 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		AC0D62141F9BD9E500A15DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */,
+				AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */,
+				AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */,
+				AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62281F9BD9E600A15DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62331F9BD9E600A15DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-        11EFAF4884AC7A0E6821772D /* [CP] Embed Pods Frameworks */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-frameworks.sh",
-                "${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
-                "${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
-            );
-            name = "[CP] Embed Pods Frameworks";
-            outputPaths = (
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-frameworks.sh\"\n";
-            showEnvVarsInLog = 0;
-        };
-        2655FA3445B04643948A6B76 /* [CP] Copy Pods Resources */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-            );
-            name = "[CP] Copy Pods Resources";
-            outputPaths = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-resources.sh\"\n";
-            showEnvVarsInLog = 0;
-        };
-        B1378324E242EF7295993ADA /* [CP] Check Pods Manifest.lock */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-                "${PODS_ROOT}/Manifest.lock",
-            );
-            name = "[CP] Check Pods Manifest.lock";
-            outputPaths = (
-                "$(DERIVED_FILE_DIR)/Pods-RuffLife-checkManifestLockResult.txt",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-            showEnvVarsInLog = 0;
-        };
+		11EFAF4884AC7A0E6821772D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2655FA3445B04643948A6B76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RuffLife/Pods-RuffLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1378324E242EF7295993ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RuffLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-        AC0D62121F9BD9E500A15DD1 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */,
-                AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */,
-                AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */,
-                ACB300761F9C0B03007883D1 /* Model.swift in Sources */,
-                FABECE411F9C6CAF00AF8DF4 /* UploadImage.swift in Sources */,
-                ACFD3AAC1F9C438B001B8083 /* Azure.swift in Sources */,
-                D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */,
-                AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        AC0D62261F9BD9E600A15DD1 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        AC0D62311F9BD9E600A15DD1 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		AC0D62121F9BD9E500A15DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D624A1F9BDE2000A15DD1 /* LostViewController.swift in Sources */,
+				AC0D621C1F9BD9E600A15DD1 /* ViewController.swift in Sources */,
+				AC0D621A1F9BD9E600A15DD1 /* AppDelegate.swift in Sources */,
+				ACB300761F9C0B03007883D1 /* Model.swift in Sources */,
+				FABECE411F9C6CAF00AF8DF4 /* UploadImage.swift in Sources */,
+				ACFD3AAC1F9C438B001B8083 /* Azure.swift in Sources */,
+				D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */,
+				AC0D62481F9BDD7100A15DD1 /* FoundViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62261F9BD9E600A15DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D622F1F9BD9E600A15DD1 /* RuffLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D62311F9BD9E600A15DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D623A1F9BD9E600A15DD1 /* RuffLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-        AC0D622C1F9BD9E600A15DD1 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = AC0D62151F9BD9E500A15DD1 /* RuffLife */;
-            targetProxy = AC0D622B1F9BD9E600A15DD1 /* PBXContainerItemProxy */;
-        };
-        AC0D62371F9BD9E600A15DD1 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = AC0D62151F9BD9E500A15DD1 /* RuffLife */;
-            targetProxy = AC0D62361F9BD9E600A15DD1 /* PBXContainerItemProxy */;
-        };
+		AC0D622C1F9BD9E600A15DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0D62151F9BD9E500A15DD1 /* RuffLife */;
+			targetProxy = AC0D622B1F9BD9E600A15DD1 /* PBXContainerItemProxy */;
+		};
+		AC0D62371F9BD9E600A15DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0D62151F9BD9E500A15DD1 /* RuffLife */;
+			targetProxy = AC0D62361F9BD9E600A15DD1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-        AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                AC0D621E1F9BD9E600A15DD1 /* Base */,
-            );
-            name = Main.storyboard;
-            sourceTree = "<group>";
-        };
-        AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                AC0D62231F9BD9E600A15DD1 /* Base */,
-            );
-            name = LaunchScreen.storyboard;
-            sourceTree = "<group>";
-        };
+		AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0D621E1F9BD9E600A15DD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0D62231F9BD9E600A15DD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-        AC0D623C1F9BD9E600A15DD1 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                ENABLE_TESTABILITY = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_DYNAMIC_NO_PIC = NO;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-                MTL_ENABLE_DEBUG_INFO = YES;
-                ONLY_ACTIVE_ARCH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            };
-            name = Debug;
-        };
-        AC0D623D1F9BD9E600A15DD1 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                ENABLE_NS_ASSERTIONS = NO;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-                MTL_ENABLE_DEBUG_INFO = NO;
-                SDKROOT = iphoneos;
-                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-                VALIDATE_PRODUCT = YES;
-            };
-            name = Release;
-        };
-        AC0D623F1F9BD9E600A15DD1 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = 958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 8D789QW9PW;
-                INFOPLIST_FILE = RuffLife/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = le.ruff;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                PROVISIONING_PROFILE_SPECIFIER = "";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-            };
-            name = Debug;
-        };
-        AC0D62401F9BD9E600A15DD1 /* Release */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 8D789QW9PW;
-                INFOPLIST_FILE = RuffLife/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = le.ruff;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                PROVISIONING_PROFILE_SPECIFIER = "";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-            };
-            name = Release;
-        };
-        AC0D62421F9BD9E600A15DD1 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 7D5RMX3VYR;
-                INFOPLIST_FILE = RuffLifeTests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeTests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuffLife.app/RuffLife";
-            };
-            name = Debug;
-        };
-        AC0D62431F9BD9E600A15DD1 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 7D5RMX3VYR;
-                INFOPLIST_FILE = RuffLifeTests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeTests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuffLife.app/RuffLife";
-            };
-            name = Release;
-        };
-        AC0D62451F9BD9E600A15DD1 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 7D5RMX3VYR;
-                INFOPLIST_FILE = RuffLifeUITests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeUITests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = RuffLife;
-            };
-            name = Debug;
-        };
-        AC0D62461F9BD9E600A15DD1 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                DEVELOPMENT_TEAM = 7D5RMX3VYR;
-                INFOPLIST_FILE = RuffLifeUITests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeUITests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = RuffLife;
-            };
-            name = Release;
-        };
+		AC0D623C1F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC0D623D1F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0D623F1F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958B85507860557C366BA760 /* Pods-RuffLife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC0D62401F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB6CE22EB68E166E6EC161C1 /* Pods-RuffLife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC0D62421F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuffLife.app/RuffLife";
+			};
+			name = Debug;
+		};
+		AC0D62431F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuffLife.app/RuffLife";
+			};
+			name = Release;
+		};
+		AC0D62451F9BD9E600A15DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RuffLife;
+			};
+			name = Debug;
+		};
+		AC0D62461F9BD9E600A15DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5RMX3VYR;
+				INFOPLIST_FILE = RuffLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.cassagne.RuffLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RuffLife;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        AC0D62111F9BD9E500A15DD1 /* Build configuration list for PBXProject "RuffLife" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                AC0D623C1F9BD9E600A15DD1 /* Debug */,
-                AC0D623D1F9BD9E600A15DD1 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                AC0D623F1F9BD9E600A15DD1 /* Debug */,
-                AC0D62401F9BD9E600A15DD1 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        AC0D62411F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeTests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                AC0D62421F9BD9E600A15DD1 /* Debug */,
-                AC0D62431F9BD9E600A15DD1 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        AC0D62441F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeUITests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                AC0D62451F9BD9E600A15DD1 /* Debug */,
-                AC0D62461F9BD9E600A15DD1 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		AC0D62111F9BD9E500A15DD1 /* Build configuration list for PBXProject "RuffLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D623C1F9BD9E600A15DD1 /* Debug */,
+				AC0D623D1F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D623E1F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D623F1F9BD9E600A15DD1 /* Debug */,
+				AC0D62401F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D62411F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D62421F9BD9E600A15DD1 /* Debug */,
+				AC0D62431F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D62441F9BD9E600A15DD1 /* Build configuration list for PBXNativeTarget "RuffLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D62451F9BD9E600A15DD1 /* Debug */,
+				AC0D62461F9BD9E600A15DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-    };
-    rootObject = AC0D620E1F9BD9E500A15DD1 /* Project object */;
+	};
+	rootObject = AC0D620E1F9BD9E500A15DD1 /* Project object */;
 }

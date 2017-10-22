@@ -13,11 +13,11 @@ import AWSDynamoDB
 class RuffLife: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
 	// User
 	@objc var FirstName: String?
-	@objc var LastName: String?
+//	@objc var LastName: String?
 	@objc var PhoneNumber: String?
 
 	// Dog
-	@objc var Color: String?
+//	@objc var Color: String?
 	@objc var Breed: String?
 	
 	@objc var ImageURL: String?
