@@ -8,12 +8,19 @@
 
 import UIKit
 import AWSDynamoDB
-import AddressBook
-import Contacts
+import CoreLocation
 
-class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 	
+	var locationCoordinate: CLLocationCoordinate2D?
 	
+	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+		let l = locations[0]
+		locationCoordinate = l.coordinate
+		location.text = "\(locationCoordinate!.latitude, locationCoordinate!.latitude)"
+		print(location)
+	}
+
 	var url: String?
 	
 	var uploadImage: UploadImage?
@@ -64,10 +71,18 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	override func viewDidLoad() {
         super.viewDidLoad()
 		imagePicker.delegate = self
+		locationManager.requestWhenInUseAuthorization()
 		
         // Do any additional setup after loading the view.
     }
 	@IBAction func submit(_ sender: Any) {
+		
+		guard let coordinate = self.locationCoordinate else {
+			let alert = UIAlertController(title: "Incomplete Form", message: "Please ensure the form is completely filled out before proceeding.", preferredStyle: .alert)
+			alert.show(self, sender: self)
+			return
+		}
+		
 		let db = AWSDynamoDBObjectMapper.default()
 		let newPet = RuffLife()!
 		
@@ -77,8 +92,8 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		newPet.Breed = breed.text
 		newPet.Color = color.text
 		newPet.ImageURL = url!
-		newPet.lat = 38.909284
-		newPet.lon = -77.041041
+		newPet.lat = coordinate.latitude as! NSNumber
+		newPet.lon = coordinate.longitude as! NSNumber
 		newPet.PetID = NSNumber(integerLiteral: Int(arc4random()))
 		
 		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
@@ -127,24 +142,17 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		
 		alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
 		
+		locationManager.distanceFilter = kCLDistanceFilterNone;
+		locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+		locationManager.startUpdatingLocation()
+		
 		self.present(alert, animated: true, completion: nil)
 //		self.show(picker, sender: self)
 		
-		let authorizationStatus = ABAddressBookGetAuthorizationStatus()
-		switch authorizationStatus {
-		case .denied, .restricted:
-			//1
-			print("Denied")
-		case .authorized:
-			//2
-			print("Authorized")
-		case .notDetermined:
-			//3
-			print("Not Determined")
-		}
-
 		present(imagePicker, animated: true, completion: nil)
 	}
+	
+	let locationManager = CLLocationManager()
 	
 	@IBOutlet weak var autofill: UIButton!
 	override func didReceiveMemoryWarning() {
