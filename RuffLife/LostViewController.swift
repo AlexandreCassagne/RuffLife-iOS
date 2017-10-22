@@ -14,9 +14,33 @@ import CoreLocation
 class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     var dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default ()
     var mapView: MKMapView!
-    let annotation = MKPointAnnotation()
+//    let annotation = MKPointAnnotation()
     var locationManager = CLLocationManager()
-  
+	
+	func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+			if annotation is MKUserLocation {
+				//return nil so map view draws "blue dot" for standard user location
+				return nil
+			}
+			
+			let reuseId = "pin"
+			
+		var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+			if pinView == nil {
+				pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+				pinView!.canShowCallout = true
+				pinView!.animatesDrop = true
+				pinView!.pinColor = .purple
+				pinView?.rightCalloutAccessoryView 
+			}
+			else {
+				pinView!.annotation = annotation
+			}
+			
+			return pinView
+
+	}
+	
     override func loadView() {
         // Create a map view
         mapView = MKMapView()
@@ -108,6 +132,7 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
                     let convertResult = result as! RuffLife
                     let newAnnotation = MKPointAnnotation()
                     newAnnotation.title = convertResult.Breed
+					newAnnotation.subtitle = "Call \(convertResult.PhoneNumber!)"
                     newAnnotation.coordinate = CLLocationCoordinate2D(latitude: convertResult.lat! as! Double, longitude: convertResult.lon! as! Double)
                     self.mapView.addAnnotation(newAnnotation)
                 }
