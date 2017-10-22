@@ -40,7 +40,7 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
 				pinView!.pinColor = .purple
 				let btn = UIButton(type: .detailDisclosure)
 				btn.addTarget(self, action: #selector(call), for: .touchDown)
-				pinView?.rightCalloutAccessoryView
+				pinView?.rightCalloutAccessoryView = btn
 			}
 			else {
 				pinView!.annotation = annotation
