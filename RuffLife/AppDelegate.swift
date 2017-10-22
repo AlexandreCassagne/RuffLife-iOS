@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-        
-		let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
-		                                                        identityPoolId:"us-east-1:13890277-ff0b-4b78-88d7-69d8279ee134")
+        let credentialsProvider = AWSStaticCredentialsProvider(accessKey:"AKIAJ6FLYTLBOGX6V6ZA", secretKey:"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")
+//        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
+//                                                                identityPoolId:"us-east-1:13890277-ff0b-4b78-88d7-69d8279ee134")
 		
 		let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
 		AWSServiceManager.default().defaultServiceConfiguration = configuration

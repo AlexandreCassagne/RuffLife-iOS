@@ -15,10 +15,10 @@ class LostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dynamoDBObjectMapper.load(Model.self, hashKey: "0", rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
+        dynamoDBObjectMapper.load(RuffLife.self, hashKey: 0, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
             if let error = task.error as? NSError {
                 print("The request failed. Error: \(error)")
-            } else if let resultModel = task.result as? Model {
+            } else if let resultModel = task.result as? RuffLife {
                 // Do something with task.result.
                 print(resultModel.Breed)
             }
