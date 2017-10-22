@@ -20,9 +20,14 @@ class Azure {
 	}
 	
 	func request(_ url : String) -> Dictionary<String, Any> {
-		var d = [String: String]()
-		d["URL"] = url
-		return [:]
+		
+		let json = ["Url": url]
+		let jsonData = try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+
+		request.httpBody = jsonData
+		
+		URLSession()
+		
 	}
 	
 	
