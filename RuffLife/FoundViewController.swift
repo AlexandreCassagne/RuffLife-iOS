@@ -18,7 +18,6 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		let l = locations[0]
 		locationCoordinate = l.coordinate
 		location.text = "\(locationCoordinate!.latitude, locationCoordinate!.latitude)"
-		print(location)
 	}
 
 	var url: String?
@@ -76,9 +75,7 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
 	@IBAction func submit(_ sender: Any) {
-		print("Hello!")
 		guard let coordinate = self.locationCoordinate, let name = firstName.text, let phoneNumber = number.text else {
-			print("Fail :( " )
 			let alert = UIAlertController(title: "Incomplete Form", message: "Please ensure the form is completely filled out before proceeding.", preferredStyle: .alert)
 			alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 			self.present(alert, animated: true, completion: nil)
