@@ -20,17 +20,11 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		picker.dismiss(animated: true, completion: nil)
 	}
 	
-	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-		guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
-		pictureView.image = image
-		
-//		uploadImage = UploadImage(image: image)
-//		uploadImage?.post {
-//			print("Returned: \(self.uploadImage?.publicURL)")
-//			url = self.uploadImage?.publicURL
-//		}
+	private func startAzure() {
 		let a = Azure()
-		a.request(url: "https://s3.amazonaws.com/rufflifeimg2/img/1508644705.70983.jpg") { predictions in
+		print("Starting azure...")
+		a.request(url: self.url!) { predictions in
+			print("Got callback.")
 			let top = predictions[0] as! [String: Any]
 			print(top)
 			let p = top["Probability"] as! Double
@@ -40,7 +34,20 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 				self.breed.text = breed
 			}
 		}
-		picker.dismiss(animated: true, completion: nil)
+	}
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+		pictureView.image = image
+		
+		uploadImage = UploadImage(image: image)
+		print("Starting upload...")
+		uploadImage?.post {
+			print("Returned: \(self.uploadImage?.publicURL)")
+			self.url = self.uploadImage?.publicURL?.absoluteString
+			self.startAzure()
+		}
+				picker.dismiss(animated: true, completion: nil)
 	}
 	
 	@IBOutlet weak var location: UITextField!

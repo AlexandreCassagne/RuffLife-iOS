@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,6 +26,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>To capture a picture of the dog and use Autofill</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Work it</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Yes </string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -38,12 +44,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Work it</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Yes </string>
-	<key>CFBundleDisplayName</key>
-	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
