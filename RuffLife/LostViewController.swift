@@ -17,6 +17,13 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
 //    let annotation = MKPointAnnotation()
     var locationManager = CLLocationManager()
 	
+	@objc func call(sender: Any) {
+		if let url = NSURL(string: "tel://\(5555555555)"), UIApplication.shared.canOpenURL(url as URL) {
+			UIApplication.shared.openURL(url as URL)
+		}
+
+	}
+	
 	func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 			if annotation is MKUserLocation {
 				//return nil so map view draws "blue dot" for standard user location
@@ -31,7 +38,9 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
 				pinView!.canShowCallout = true
 				pinView!.animatesDrop = true
 				pinView!.pinColor = .purple
-				pinView?.rightCalloutAccessoryView 
+				let btn = UIButton(type: .detailDisclosure)
+				btn.addTarget(self, action: #selector(call), for: .touchDown)
+				pinView?.rightCalloutAccessoryView
 			}
 			else {
 				pinView!.annotation = annotation
