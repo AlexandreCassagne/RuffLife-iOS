@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSDynamoDB
 
 class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -38,17 +39,27 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
 	@IBAction func submit(_ sender: Any) {
-		let newPet = Model();
-		newPet?.FirstName = firstName.text
+		let db = AWSDynamoDBObjectMapper.default()
 		
-		newPet?.PhoneNumber = number.text
-		newPet?.Breed = breed.text
-		newPet?.Color = color.text
-		newPet?.ImageURL = ""
-		newPet?.lat = 38.909284
-		newPet?.lon = -77.041041
+		let newPet = Model()!;
+		newPet.FirstName = firstName.text
 		
+		newPet.PhoneNumber = number.text
+		newPet.Breed = breed.text
+		newPet.Color = color.text
+		newPet.ImageURL = "http://pornhub.com/"
+		newPet.lat = 38.909284
+		newPet.lon = -77.041041
 		
+		db.save(newPet).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
+			if let error = task.error as? NSError {
+				print("The request failed. Error: \(error)")
+			} else {
+				// Do something with task.result or perform other operations.
+			}
+			return nil
+		})
+
 	}
 	@IBAction func autofill(_ sender: Any) {
 		let picker = UIImagePickerController();
