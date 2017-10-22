@@ -131,7 +131,6 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 //		self.show(picker, sender: self)
 		
 		let authorizationStatus = ABAddressBookGetAuthorizationStatus()
-
 		switch authorizationStatus {
 		case .denied, .restricted:
 			//1
