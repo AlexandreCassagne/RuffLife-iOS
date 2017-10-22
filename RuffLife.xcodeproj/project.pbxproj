@@ -23,6 +23,7 @@
 		D27A91351F9C4F3C00C4D2C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */; };
 		D2853CDD1F9BEF0D00BE7053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */; };
 		FABECE411F9C6CAF00AF8DF4 /* UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */; };
+		FAC33DAB1F9C905700D9B015 /* logoHackHarvard.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC33DAA1F9C905600D9B015 /* logoHackHarvard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D27A91341F9C4F3C00C4D2C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D2853CDC1F9BEF0D00BE7053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FABECE401F9C6CAF00AF8DF4 /* UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImage.swift; sourceTree = "<group>"; };
+		FAC33DAA1F9C905600D9B015 /* logoHackHarvard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoHackHarvard.png; path = ../../../Downloads/logoHackHarvard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				ACB300751F9C0B03007883D1 /* Model.swift */,
 				AC0D62491F9BDE2000A15DD1 /* LostViewController.swift */,
 				AC0D62201F9BD9E600A15DD1 /* Assets.xcassets */,
+				FAC33DAA1F9C905600D9B015 /* logoHackHarvard.png */,
 				AC0D62221F9BD9E600A15DD1 /* LaunchScreen.storyboard */,
 				AC0D621D1F9BD9E600A15DD1 /* Main.storyboard */,
 				AC0D62251F9BD9E600A15DD1 /* Info.plist */,
@@ -291,6 +294,7 @@
 			files = (
 				AC0D624C1F9BE7BC00A15DD1 /* .gitignore in Resources */,
 				AC0D62241F9BD9E600A15DD1 /* LaunchScreen.storyboard in Resources */,
+				FAC33DAB1F9C905700D9B015 /* logoHackHarvard.png in Resources */,
 				AC0D62211F9BD9E600A15DD1 /* Assets.xcassets in Resources */,
 				AC0D621F1F9BD9E600A15DD1 /* Main.storyboard in Resources */,
 			);
