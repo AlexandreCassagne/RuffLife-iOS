@@ -10,7 +10,9 @@ import UIKit
 import AWSDynamoDB
 
 class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+	
+	
+	var url: String?
 	
 	var uploadImage: UploadImage?
 	
@@ -22,12 +24,13 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
 		pictureView.image = image
 		
-		uploadImage = UploadImage(image: image)
-		uploadImage?.post {
-			print("Returned: \(self.uploadImage?.publicURL)")
-			
-		}
-		
+//		uploadImage = UploadImage(image: image)
+//		uploadImage?.post {
+//			print("Returned: \(self.uploadImage?.publicURL)")
+//			url = self.uploadImage?.publicURL
+//		}
+		let a = Azure()
+		a.request("https://s3.amazonaws.com/rufflifeimg2/img/1508644705.70983.jpg")
 		picker.dismiss(animated: true, completion: nil)
 	}
 	
