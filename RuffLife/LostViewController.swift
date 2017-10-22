@@ -16,7 +16,7 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     var mapView: MKMapView!
     let annotation = MKPointAnnotation()
     var locationManager = CLLocationManager()
-
+  
     override func loadView() {
         // Create a map view
         mapView = MKMapView()
@@ -95,6 +95,7 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         DispatchQueue.main.async {
             self.locationManager.startUpdatingLocation()
         }
+
        // Querying dynambodb
         let scanExpression = AWSDynamoDBScanExpression()
         scanExpression.limit = 20
@@ -104,14 +105,16 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             } else if let resultModel = task.result{
                 // Do something with task.result.
                 for result in resultModel.items {
-                    var parsedResult = result as! RuffLife
-                    self.annotation.title = parsedResult.Breed
-                    self.annotation.coordinate = CLLocationCoordinate2D(latitude: parsedResult.lat! as! Double, longitude: parsedResult.lon! as! Double)
+                    let convertResult = result as! RuffLife
+                    let newAnnotation = MKPointAnnotation()
+                    newAnnotation.title = convertResult.Breed
+                    newAnnotation.coordinate = CLLocationCoordinate2D(latitude: convertResult.lat! as! Double, longitude: convertResult.lon! as! Double)
+                    self.mapView.addAnnotation(newAnnotation)
                 }
+                
             }
             return nil
         })
-        mapView.addAnnotation(annotation)
         
     }
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
