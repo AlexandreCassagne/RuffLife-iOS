@@ -30,7 +30,9 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 //			url = self.uploadImage?.publicURL
 //		}
 		let a = Azure()
-		a.request("https://s3.amazonaws.com/rufflifeimg2/img/1508644705.70983.jpg")
+		a.request(url: "https://s3.amazonaws.com/rufflifeimg2/img/1508644705.70983.jpg") { json in
+			print(json)
+		}
 		picker.dismiss(animated: true, completion: nil)
 	}
 	
