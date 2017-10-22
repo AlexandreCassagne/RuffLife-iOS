@@ -111,11 +111,10 @@ class FoundViewController: UIViewController, UIImagePickerControllerDelegate, UI
 					// Do something with task.result or perform other operations.
 					alert.title = "Success"
 					alert.message = "Successfully published to location of this pet!"
-					alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
-					self.present(alert, animated: true, completion: {
-						self.navigationController?.popViewController(animated: true)
-					})
-
+					alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { _ in
+						self.navigationController!.popViewController(animated: true)
+					}))
+					self.present(alert, animated: true, completion: nil)
 				}
 			}
 			return nil
