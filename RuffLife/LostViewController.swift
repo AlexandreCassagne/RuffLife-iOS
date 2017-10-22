@@ -86,19 +86,15 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             locationManager.startUpdatingLocation()
         }
         //Zoom to user location
-        let noLocation = CLLocationCoordinate2D()
-        let viewRegion = MKCoordinateRegionMakeWithDistance(noLocation, 200, 200)
+        var noLocation = CLLocationCoordinate2D()
+        noLocation.latitude = 42.380999
+        noLocation.longitude = -71.124998
+        var viewRegion = MKCoordinateRegionMakeWithDistance(noLocation, 200, 200)
         mapView.setRegion(viewRegion, animated: true)
         
         DispatchQueue.main.async {
             self.locationManager.startUpdatingLocation()
         }
-//        locationManager = CLLocationManager();
-//        locationManager.delegate = self
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.requestAlwaysAuthorization()
-//        locationManager.startUpdatingLocation()
-
        // Querying dynambodb
 //        dynamoDBObjectMapper.load(RuffLife.self, hashKey: 0, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
 //            if let error = task.error as? NSError {
