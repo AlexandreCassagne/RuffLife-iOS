@@ -103,10 +103,11 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
                 print("The request failed. Error: \(error)")
             } else if let resultModel = task.result{
                 // Do something with task.result.
-                for result in resultModel.items as! RuffLife{
-                    self.annotation.coordinate = CLLocationCoordinate2D(latitude: resultModel.lat! as! Double, longitude: resultModel.lon! as! Double)
+                for result in resultModel.items {
+                    var parsedResult = result as! RuffLife
+                    self.annotation.title = parsedResult.Breed
+                    self.annotation.coordinate = CLLocationCoordinate2D(latitude: parsedResult.lat! as! Double, longitude: parsedResult.lon! as! Double)
                 }
-                
             }
             return nil
         })
