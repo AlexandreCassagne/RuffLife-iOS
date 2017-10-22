@@ -20,7 +20,7 @@ class LostViewController: UIViewController {
                 print("The request failed. Error: \(error)")
             } else if let resultModel = task.result as? RuffLife {
                 // Do something with task.result.
-                print(resultModel.Breed)
+                print(resultModel.Breed!)
             }
             return nil
         })
