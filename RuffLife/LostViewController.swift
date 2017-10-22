@@ -16,7 +16,7 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     var mapView: MKMapView!
     let annotation = MKPointAnnotation()
     var locationManager = CLLocationManager()
-
+  
     override func loadView() {
         // Create a map view
         mapView = MKMapView()
@@ -95,17 +95,26 @@ class LostViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         DispatchQueue.main.async {
             self.locationManager.startUpdatingLocation()
         }
+
        // Querying dynambodb
-//        dynamoDBObjectMapper.load(RuffLife.self, hashKey: 0, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
-//            if let error = task.error as? NSError {
-//                print("The request failed. Error: \(error)")
-//            } else if let resultModel = task.result as? RuffLife {
-//                // Do something with task.result.
-//                self.annotation.coordinate = CLLocationCoordinate2D(latitude: resultModel.lat! as! Double, longitude: resultModel.lon! as! Double)
-//            }
-//            return nil
-//        })
-//        mapView.addAnnotation(annotation)
+        let scanExpression = AWSDynamoDBScanExpression()
+        scanExpression.limit = 20
+        dynamoDBObjectMapper.scan(RuffLife.self, expression: scanExpression).continueWith(block: { (task:AWSTask<AWSDynamoDBPaginatedOutput>!) -> Any? in
+            if let error = task.error as? NSError {
+                print("The request failed. Error: \(error)")
+            } else if let resultModel = task.result{
+                // Do something with task.result.
+                for result in resultModel.items {
+                    let convertResult = result as! RuffLife
+                    let newAnnotation = MKPointAnnotation()
+                    newAnnotation.title = convertResult.Breed
+                    newAnnotation.coordinate = CLLocationCoordinate2D(latitude: convertResult.lat! as! Double, longitude: convertResult.lon! as! Double)
+                    self.mapView.addAnnotation(newAnnotation)
+                }
+                
+            }
+            return nil
+        })
         
     }
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
