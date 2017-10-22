@@ -9,11 +9,13 @@
 import UIKit
 import MapKit
 import AWSDynamoDB
+import CoreLocation
 
-class LostViewController: UIViewController {
+class LostViewController: UIViewController, CLLocationManagerDelegate {
     var dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default ()
     var mapView: MKMapView!
     let annotation = MKPointAnnotation()
+     let locationManager = CLLocationManager()
     override func loadView() {
         // Create a map view
         mapView = MKMapView()
@@ -54,18 +56,41 @@ class LostViewController: UIViewController {
             break
         }
     }
+    
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [CLLocation]){
+        mapView.removeAnnotation(annotation)
+        
+        let location = locations.last! as CLLocation
+        
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        //set region on the map
+        mapView.setRegion(region, animated: true)
+        
+        annotation.coordinate = location.coordinate
+        mapView.addAnnotation(annotation)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        dynamoDBObjectMapper.load(RuffLife.self, hashKey: 0, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
-            if let error = task.error as? NSError {
-                print("The request failed. Error: \(error)")
-            } else if let resultModel = task.result as? RuffLife {
-                // Do something with task.result.
-                print(resultModel.lat!)
-                print(resultModel.lon!)
-            }
-            return nil
-        })
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+       // locationManager.requestLocation()
+        locationManager.startUpdatingLocation()
+        
+        //Querying dynambodb
+//        dynamoDBObjectMapper.load(RuffLife.self, hashKey: 0, rangeKey:nil).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
+//            if let error = task.error as? NSError {
+//                print("The request failed. Error: \(error)")
+//            } else if let resultModel = task.result as? RuffLife {
+//                // Do something with task.result.
+//                self.annotation.coordinate = CLLocationCoordinate2D(latitude: resultModel.lat! as! Double, longitude: resultModel.lon! as! Double)
+//            }
+//            return nil
+//        })
+        
     }
 
 }
